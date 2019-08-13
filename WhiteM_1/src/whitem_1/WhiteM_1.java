@@ -16,7 +16,8 @@ public class WhiteM_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ve1 ve1 = new ve1();
+        Ve1 ve1 = new Ve1();
+        ve1.show();
     }
     
 }
