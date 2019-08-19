@@ -181,7 +181,8 @@ public class Ve1 extends javax.swing.JFrame {
                     Home Home = new Home();
                     Home.show();
                 }else{
-                    
+                    NoUser NoUser = new NoUser();
+                    NoUser.show(true);
                 }
             }
             System.out.println(arr);
@@ -237,4 +238,8 @@ public class Ve1 extends javax.swing.JFrame {
     private java.awt.Label label1;
     private java.awt.Panel panel1;
     // End of variables declaration//GEN-END:variables
+
+    private void deelay(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
