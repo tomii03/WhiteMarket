@@ -118,9 +118,11 @@ public class Registro extends javax.swing.JFrame {
 
         jSeparator5.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
+        jPasswordField1.setForeground(new java.awt.Color(0, 0, 0));
 
-        jPasswordField2.setText("jPasswordField1");
+        jPasswordField2.setBackground(new java.awt.Color(255, 255, 255));
+        jPasswordField2.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
