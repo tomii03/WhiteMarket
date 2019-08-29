@@ -206,7 +206,6 @@ public class Ve1 extends javax.swing.JFrame {
                     NoUser.show(true);
                 }
             }
-            System.out.println(arr);
         } catch (Exception ex) {
             Logger.getLogger(Ve1.class.getName()).log(Level.SEVERE, null, ex);
         }
