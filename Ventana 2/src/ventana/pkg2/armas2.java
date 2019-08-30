@@ -3989,7 +3989,7 @@ public class armas2 extends javax.swing.JFrame {
         lblO12.setBackground(new java.awt.Color(255, 255, 255));
         lblO12.setFont(new java.awt.Font("Ubuntu Condensed", 1, 26)); // NOI18N
         lblO12.setForeground(new java.awt.Color(0, 0, 0));
-        lblO12.setText("tanque balistico belga");
+        lblO12.setText("Tanque balístico belga");
 
         jLabel124.setBackground(new java.awt.Color(255, 255, 255));
         jLabel124.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -4138,8 +4138,7 @@ public class armas2 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 680, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4154,7 +4153,7 @@ public class armas2 extends javax.swing.JFrame {
                 .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 463, Short.MAX_VALUE)
                     .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 

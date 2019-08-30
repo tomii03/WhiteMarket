@@ -6152,8 +6152,7 @@
           <Group type="102" attributes="0">
               <Component id="jPanel49" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Component id="jPanel56" pref="0" max="32767" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="jPanel56" pref="680" max="32767" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
@@ -6172,7 +6171,7 @@
               <Component id="jPanel51" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jPanel56" pref="0" max="32767" attributes="0"/>
+                  <Component id="jPanel56" pref="463" max="32767" attributes="0"/>
                   <Component id="jPanel49" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -6844,7 +6843,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="tanque balistico belga"/>
+                <Property name="text" type="java.lang.String" value="Tanque bal&#xed;stico belga"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel124">

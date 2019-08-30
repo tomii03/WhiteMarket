@@ -6,8 +6,8 @@ public class Ventana2 {
 
     public static void main(String[] args) {
         
-        Home armas = new Home();
-        armas.show();
+        Tecnologia1 tecnologia1 = new Tecnologia1();
+        tecnologia1.show();
     }
     
 }
