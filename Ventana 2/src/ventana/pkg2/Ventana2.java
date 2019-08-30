@@ -6,8 +6,8 @@ public class Ventana2 {
 
     public static void main(String[] args) {
         
-        Tecnologia1 tecnologia1 = new Tecnologia1();
-        tecnologia1.show();
+        Autos1 autos1 = new Autos1();
+        autos1.show();
     }
     
 }

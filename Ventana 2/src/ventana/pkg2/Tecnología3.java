@@ -225,7 +225,7 @@ public class Tecnología3 extends javax.swing.JFrame {
 
         jPanel59.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventana/pkg2/tele.png"))); // NOI18N
+        jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventana/pkg2/iphone.png"))); // NOI18N
         jLabel123.setText("jLabel2");
 
         jSeparator46.setBackground(new java.awt.Color(0, 0, 0));
@@ -234,16 +234,16 @@ public class Tecnología3 extends javax.swing.JFrame {
         lblOT6.setBackground(new java.awt.Color(255, 255, 255));
         lblOT6.setFont(new java.awt.Font("Ubuntu Condensed", 1, 26)); // NOI18N
         lblOT6.setForeground(new java.awt.Color(0, 0, 0));
-        lblOT6.setText("LG Smart TV");
+        lblOT6.setText("iPhone X");
 
         jLabel124.setBackground(new java.awt.Color(255, 255, 255));
         jLabel124.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jLabel124.setForeground(new java.awt.Color(70, 70, 70));
-        jLabel124.setText("49\" 4K UHD. Escencial para ver Netflix");
+        jLabel124.setText("Unos de los celulares apple mas aclamado por la gente");
 
         lblPT6.setFont(new java.awt.Font("FreeSerif", 1, 24)); // NOI18N
         lblPT6.setForeground(new java.awt.Color(25, 241, 25));
-        lblPT6.setText("$945");
+        lblPT6.setText("$495");
 
         jButton53.setBackground(new java.awt.Color(0, 0, 0));
         jButton53.setForeground(new java.awt.Color(255, 255, 255));
