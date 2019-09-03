@@ -3,12 +3,31 @@ package ventana.pkg2;
 
 
 public class Carrito extends javax.swing.JFrame {
+    
+    public int suma;
+    private Autos2 auto;
+    
+
+    public int getSuma() {
+        return suma;
+    }
+
+    public void setSuma(int suma) {
+        this.suma = suma;
+    }
 
     
     public Carrito() {
         initComponents();
+         System.out.println(auto.getSumat());
     }
 
+    public Carrito(int suma) {
+        this.suma = suma;
+    }
+
+    
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -146,9 +165,12 @@ public class Carrito extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Carrito().setVisible(true);
+                
             }
         });
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;

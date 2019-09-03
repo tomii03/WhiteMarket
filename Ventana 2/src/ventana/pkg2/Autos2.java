@@ -65,8 +65,8 @@ public class Autos2 extends javax.swing.JFrame {
         jLabel108 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jButton45 = new javax.swing.JButton();
-        jComboBox9 = new javax.swing.JComboBox<>();
-        jButton46 = new javax.swing.JButton();
+        search1 = new javax.swing.JComboBox<>();
+        Jbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -433,23 +433,28 @@ public class Autos2 extends javax.swing.JFrame {
             }
         });
 
-        jComboBox9.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox9.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Autos", "Armas", "Tecnologia", "Moda" }));
-        jComboBox9.addActionListener(new java.awt.event.ActionListener() {
+        search1.setBackground(new java.awt.Color(255, 255, 255));
+        search1.setForeground(new java.awt.Color(0, 0, 0));
+        search1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Autos", "Armas", "Tecnologia", "Moda" }));
+        search1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox9ActionPerformed(evt);
+                search1ActionPerformed(evt);
             }
         });
 
-        jButton46.setBackground(new java.awt.Color(0, 0, 0));
-        jButton46.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
-        jButton46.setForeground(new java.awt.Color(255, 255, 255));
-        jButton46.setText("Buscar");
-        jButton46.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.black, java.awt.Color.darkGray, java.awt.Color.black));
-        jButton46.setMaximumSize(new java.awt.Dimension(24, 13));
-        jButton46.setMinimumSize(new java.awt.Dimension(24, 13));
-        jButton46.setPreferredSize(new java.awt.Dimension(24, 13));
+        Jbtn.setBackground(new java.awt.Color(0, 0, 0));
+        Jbtn.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
+        Jbtn.setForeground(new java.awt.Color(255, 255, 255));
+        Jbtn.setText("Buscar");
+        Jbtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.black, java.awt.Color.darkGray, java.awt.Color.black));
+        Jbtn.setMaximumSize(new java.awt.Dimension(24, 13));
+        Jbtn.setMinimumSize(new java.awt.Dimension(24, 13));
+        Jbtn.setPreferredSize(new java.awt.Dimension(24, 13));
+        Jbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
         jPanel47.setLayout(jPanel47Layout);
@@ -467,9 +472,9 @@ public class Autos2 extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(jLabel109)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
-                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(search1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
-                .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Jbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48))
         );
         jPanel47Layout.setVerticalGroup(
@@ -488,8 +493,8 @@ public class Autos2 extends javax.swing.JFrame {
             .addGroup(jPanel47Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(search1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Jbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -519,25 +524,35 @@ public class Autos2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    private int pagani = 765200;
+    private int caparo = 555600;
+    private int lexus = 395000;
+    private int sumat = 0;
+    
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         // TODO add your handling code here:
         String obj = lblOA4.getText();
         String prec = lblPA4.getText();
-        jTAA2.append("\n" + obj + " ----- " + prec);
+        jTAA2.append("\n" + obj + " ----- " +"$" +pagani);
+        
+        sumat += pagani;
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
         // TODO add your handling code here:
         String obj = lblOA5.getText();
         String prec = lblPA5.getText();
-        jTAA2.append("\n" + obj + " ----- " + prec);
+         jTAA2.append("\n" + obj + " ----- " +"$" +caparo);
+          sumat += caparo;
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         // TODO add your handling code here:
         String obj = lblOA6.getText();
         String prec = lblPA6.getText();
-        jTAA2.append("\n" + obj + " ----- " + prec);
+         jTAA2.append("\n" + obj + " ----- " +"$" +lexus);
+          sumat += lexus;
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
@@ -555,13 +570,39 @@ public class Autos2 extends javax.swing.JFrame {
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         // TODO add your handling code here:
-        Registro reg = new Registro();
-        reg.show();
+        Carrito carrito = new Carrito();
+        carrito.show();
+        this.dispose();
     }//GEN-LAST:event_jButton45ActionPerformed
 
-    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+    private void search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox9ActionPerformed
+    }//GEN-LAST:event_search1ActionPerformed
+
+    private void JbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnActionPerformed
+        // TODO add your handling code here:
+        String busc1 = (String) search1.getSelectedItem();
+        if (busc1.equals("Moda")){
+            Moda1 Mod = new Moda1();
+            Mod.show();
+            this.dispose();
+        }
+        if (busc1.equals("Tecnologia")){
+            Tecnologia1 tecnologia1 = new Tecnologia1();
+            tecnologia1.show(); 
+            this.dispose();
+        }
+        if (busc1.equals("Armas")){
+            Home armas = new Home();
+            armas.show();
+            this.dispose();
+        }
+        if (busc1.equals("Autos")){
+            Autos1 autos1 = new Autos1();
+            autos1.show();
+            this.dispose();
+        }    
+    }//GEN-LAST:event_JbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -598,15 +639,48 @@ public class Autos2 extends javax.swing.JFrame {
         });
     }
 
+    public int getSumat() {
+        return sumat;
+    }
+
+    public void setSumat(int sumat) {
+        this.sumat = sumat;
+    }
+
+    public int getPagani() {
+        return pagani;
+    }
+
+    public void setPagani(int pagani) {
+        this.pagani = pagani;
+    }
+
+    public int getCaparo() {
+        return caparo;
+    }
+
+    public void setCaparo(int caparo) {
+        this.caparo = caparo;
+    }
+
+    public int getLexus() {
+        return lexus;
+    }
+
+    public void setLexus(int lexus) {
+        this.lexus = lexus;
+    }
+    
+    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Jbtn;
     private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton46;
     private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton52;
     private javax.swing.JButton jButton53;
     private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton55;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel119;
@@ -639,5 +713,6 @@ public class Autos2 extends javax.swing.JFrame {
     private javax.swing.JLabel lblPA4;
     private javax.swing.JLabel lblPA5;
     private javax.swing.JLabel lblPA6;
+    private javax.swing.JComboBox<String> search1;
     // End of variables declaration//GEN-END:variables
 }

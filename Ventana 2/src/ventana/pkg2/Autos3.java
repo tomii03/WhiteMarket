@@ -32,7 +32,7 @@ public class Autos3 extends javax.swing.JFrame {
         jLabel108 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jButton45 = new javax.swing.JButton();
-        jComboBox9 = new javax.swing.JComboBox<>();
+        search = new javax.swing.JComboBox<>();
         jButton46 = new javax.swing.JButton();
         jPanel51 = new javax.swing.JPanel();
         jPanel56 = new javax.swing.JPanel();
@@ -91,12 +91,12 @@ public class Autos3 extends javax.swing.JFrame {
             }
         });
 
-        jComboBox9.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox9.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Autos", "Armas", "Tecnologia", "Moda" }));
-        jComboBox9.addActionListener(new java.awt.event.ActionListener() {
+        search.setBackground(new java.awt.Color(255, 255, 255));
+        search.setForeground(new java.awt.Color(0, 0, 0));
+        search.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Autos", "Armas", "Tecnologia", "Moda" }));
+        search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox9ActionPerformed(evt);
+                searchActionPerformed(evt);
             }
         });
 
@@ -108,6 +108,11 @@ public class Autos3 extends javax.swing.JFrame {
         jButton46.setMaximumSize(new java.awt.Dimension(24, 13));
         jButton46.setMinimumSize(new java.awt.Dimension(24, 13));
         jButton46.setPreferredSize(new java.awt.Dimension(24, 13));
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
         jPanel47.setLayout(jPanel47Layout);
@@ -125,7 +130,7 @@ public class Autos3 extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(jLabel109)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
-                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
                 .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48))
@@ -146,7 +151,7 @@ public class Autos3 extends javax.swing.JFrame {
             .addGroup(jPanel47Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -497,7 +502,7 @@ public class Autos3 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 680, Short.MAX_VALUE))
             .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
@@ -522,9 +527,10 @@ public class Autos3 extends javax.swing.JFrame {
         reg.show();
     }//GEN-LAST:event_jButton45ActionPerformed
 
-    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox9ActionPerformed
+        
+    }//GEN-LAST:event_searchActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         // TODO add your handling code here:
@@ -559,6 +565,31 @@ public class Autos3 extends javax.swing.JFrame {
         autos2.show();
         this.dispose();
     }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        // TODO add your handling code here:
+        String busc = (String) search.getSelectedItem();
+        if (busc.equals("Moda")){
+            Moda1 Mod = new Moda1();
+            Mod.show();
+            this.dispose();
+        }
+        if (busc.equals("Tecnologia")){
+            Tecnologia1 tecnologia1 = new Tecnologia1();
+            tecnologia1.show(); 
+            this.dispose();
+        }
+        if (busc.equals("Armas")){
+            Home armas = new Home();
+            armas.show();
+            this.dispose();
+        }
+        if (busc.equals("Autos")){
+            Autos1 autos1 = new Autos1();
+            autos1.show();
+            this.dispose();
+        }    
+    }//GEN-LAST:event_jButton46ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -603,7 +634,6 @@ public class Autos3 extends javax.swing.JFrame {
     private javax.swing.JButton jButton53;
     private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton55;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel119;
@@ -635,5 +665,6 @@ public class Autos3 extends javax.swing.JFrame {
     private javax.swing.JLabel lblPA4;
     private javax.swing.JLabel lblPA5;
     private javax.swing.JLabel lblPA6;
+    private javax.swing.JComboBox<String> search;
     // End of variables declaration//GEN-END:variables
 }

@@ -30,7 +30,7 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        search1 = new javax.swing.JComboBox<>();
         jButton7 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
@@ -107,12 +107,12 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Armas", "Moda", "Tecnologia", "Autos" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        search1.setBackground(new java.awt.Color(255, 255, 255));
+        search1.setForeground(new java.awt.Color(0, 0, 0));
+        search1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Armas", "Moda", "Tecnologia", "Autos" }));
+        search1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                search1ActionPerformed(evt);
             }
         });
 
@@ -124,6 +124,11 @@ public class Home extends javax.swing.JFrame {
         jButton7.setMaximumSize(new java.awt.Dimension(24, 13));
         jButton7.setMinimumSize(new java.awt.Dimension(24, 13));
         jButton7.setPreferredSize(new java.awt.Dimension(24, 13));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -141,7 +146,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(jLabel5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(search1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48))
@@ -162,7 +167,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(38, 38, 38))
         );
@@ -546,9 +551,9 @@ public class Home extends javax.swing.JFrame {
         jTA1.append("\n" + obj + " ----- " + prec);
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_search1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         armas2 weapons2 = new armas2();
@@ -563,6 +568,32 @@ public class Home extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        String busc1 = (String) search1.getSelectedItem();
+        if (busc1.equals("Moda")){
+            Moda1 Mod = new Moda1();
+            Mod.show();
+            this.dispose();
+        }
+        if (busc1.equals("Tecnologia")){
+            Tecnologia1 tecnologia1 = new Tecnologia1();
+            tecnologia1.show(); 
+            this.dispose();
+        }
+        if (busc1.equals("Armas")){
+            Home armas = new Home();
+            armas.show();
+            this.dispose();
+        }
+        if (busc1.equals("Autos")){
+            Autos1 autos1 = new Autos1();
+            autos1.show();
+            this.dispose();
+        }    
+        
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -575,7 +606,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -608,5 +638,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblP;
     private javax.swing.JLabel lblP2;
     private javax.swing.JLabel lblP3;
+    private javax.swing.JComboBox<String> search1;
     // End of variables declaration//GEN-END:variables
 }

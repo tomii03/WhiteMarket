@@ -26,7 +26,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel49" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Component id="jPanel56" pref="0" max="32767" attributes="0"/>
+              <Component id="jPanel56" pref="680" max="32767" attributes="0"/>
           </Group>
           <Component id="jPanel47" alignment="0" min="-2" max="-2" attributes="0"/>
           <Component id="jPanel51" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -70,7 +70,7 @@
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Component id="jLabel109" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="117" max="32767" attributes="0"/>
-                          <Component id="jComboBox9" min="-2" pref="122" max="-2" attributes="0"/>
+                          <Component id="search" min="-2" pref="122" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
@@ -99,7 +99,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jComboBox9" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="search" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton46" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -156,7 +156,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton45ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox9">
+        <Component class="javax.swing.JComboBox" name="search">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -174,7 +174,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox9ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -212,6 +212,9 @@
               <Dimension value="[24, 13]"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton46ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
